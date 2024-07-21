@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Perfectly Portioned Fitness</title>
+    <script src="projectJS.js" defer></script>
+    <style>
+        body {
+            background-color: #c7f4c8;
+            margin: 0px 0px 20px 0px;
+            overflow-y: auto;
+        }
+        h1 {
+            color: #0a2206;
+            font-size: 2em;
+            margin: 0px;
+        }
+        h2 {
+            color: #0a2206;
+            font-size: 1.5em;
+        }
+        p {
+            color: #0f3309;
+            font-size: 1.2em;
+            margin: 20px 0px 5px 0px;
+        }
+        input {
+            color: #0f3309;
+            font-size: 1em;
+        }
+        button{
+            color: #0a2206;
+            font-size: 1em;
+            background-color: #ffff7c;
+            border: 2px outset #b8b853;
+        }
+        #banner {
+            width: 100%;
+            background-color: #519a5d;
+            border: 2px solid #0f3309;
+            padding: 0px 10px 0px 10px;
+        }
+        #logo {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+        #studentInfo {
+            position: absolute;
+            margin: 5px 0px 0px 0px;
+            font-size: 1em;
+            width: 10%
+        }
+        #content {
+            margin: 0px 0px 0px 15px;
+        }
+        #mealPlan {
+            margin: 35px 0px 0px 0px;
+        }
+        #customerInfo {
+            margin: 35px 0px 25px 0px;
+            clear: both;
+        }
+        #submitDiv {
+            padding: 0px 0px 35px 0px;
+            clear: both;
+        }
+        #goal {
+            padding: 0px 100px 25px 0px;
+            color: #0f3309;
+            font-size: 1em;
+        }
+        #submitButton, #clearButton {
+            float: left;
+            margin-right: 10px;
+        }
+        #copyAllButton, #copyAltButton {
+            clear: both;
+            margin: 0px 10px 0px 0px;
+        }
+        #copy {
+            clear: both;
+        }
+
+        .weekDay {
+            margin: 0px 3.5% 35px 0px;
+            width: 10.7%;
+            float: left;
+        }
+        .mealInput {
+            width: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <p id="studentInfo">John Huestis</br>WEB.115.0001</p>
+        <img src="banner.png" id="logo">
+    </div>
+
+    <div id ="content">
+        <form id = "myForm">
+
+        <div id="mealPlan">
+        <h1>Meal Plan</h1>
+            <div class="weekDay">
+            <h2>Monday</h2>
+                <p>Breakfast:</p>
+                <input type="text" id="breakfastInputM" name="breakfastInputM" class="mealInput">
+            
+                <p>Snack:</p>
+                <input type="text" id="snack1InputM" name="snack1InputM" class="mealInput">
+        
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputM" name="lunchInputM" class="mealInput">
+        
+                <p>Snack:</p>
+                <input type="text" id="snack2InputM" name="snack2InputM" class="mealInput">
+            
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputM" name="dinnerInputM" class="mealInput">
+            </div>
+
+            <div class="weekDay">
+            <h2>Tuesday</h2>
+                <p>Breakfast:</p>
+                 <input type="text" id="breakfastInputT" name="breakfastInputT" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack1InputT" name="snack1InputT" class="mealInput">
+            
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputT" name="lunchInputT" class="mealInput">
+            
+                <p>Snack:</p>
+                <input type="text" id="snack2InputT" name="snack2InputT" class="mealInput">
+                
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputT" name="dinnerInputT" class="mealInput">
+            </div>
+
+            <div class="weekDay">
+            <h2>Wednesday</h2>
+                <p>Breakfast:</p>
+                 <input type="text" id="breakfastInputW" name="breakfastInputW" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack1InputW" name="snack1InputW" class="mealInput">
+            
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputW" name="lunchInputW" class="mealInput">
+            
+                <p>Snack:</p>
+                <input type="text" id="snack2InputW" name="snack2InputW" class="mealInput">
+                
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputW" name="dinnerInputW" class="mealInput">
+            </div>
+
+            <div class="weekDay">
+            <h2>Thursday</h2>
+                <p>Breakfast:</p>
+                 <input type="text" id="breakfastInputTh" name="breakfastInputTh" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack1InputTh" name="snack1InputTh" class="mealInput">
+            
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputTh" name="lunchInputTh" class="mealInput">
+            
+                <p>Snack:</p>
+                <input type="text" id="snack2InputTh" name="snack2InputTh" class="mealInput">
+                
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputTh" name="dinnerInputTh" class="mealInput">
+            </div>
+
+            <div class="weekDay">
+            <h2>Friday</h2>
+                <p>Breakfast:</p>
+                 <input type="text" id="breakfastInputF" name="breakfastInputF" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack1InputF" name="snack1InputF" class="mealInput">
+            
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputF" name="lunchInputF" class="mealInput">
+            
+                <p>Snack:</p>
+                <input type="text" id="snack2InputF" name="snack2InputF" class="mealInput">
+                
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputF" name="dinnerInputF" class="mealInput">
+            </div>
+
+            <div class="weekDay">
+            <h2>Saturday</h2>
+                <p>Breakfast:</p>
+                 <input type="text" id="breakfastInputS" name="breakfastInputS" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack1InputS" name="snack1InputS" class="mealInput">
+            
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputS" name="lunchInputS" class="mealInput">
+            
+                <p>Snack:</p>
+                <input type="text" id="snack2InputS" name="snack2InputS" class="mealInput">
+                
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputS" name="dinnerInputS" class="mealInput">
+            </div>
+
+            <div class="weekDay">
+            <h2>Sunday</h2>
+                <p>Breakfast:</p>
+                 <input type="text" id="breakfastInputSn" name="breakfastInputSn" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack1InputSn" name="snack1InputSn" class="mealInput">
+                
+                <p>Lunch:</p>
+                <input type="text" id="lunchInputSn" name="lunchInputSn" class="mealInput">
+                
+                <p>Snack:</p>
+                <input type="text" id="snack2InputSn" name="snack2InputSn" class="mealInput">
+                    
+                <p>Dinner:</p>
+                <input type="text" id="dinnerInputSn" name="dinnerInputSn" class="mealInput">
+            </div>
+
+            <div id="copy">
+                <button type="button" id="copyAllButton">Copy Monday to all</button>
+                <button type="button" id="copyAltButton">Copy Mon/Tue alternating</button>
+            </div>
+
+
+                
+        </div>
+
+        <div id="customerInfo">
+        <h1>Customer Information</h1>
+            <p>Email Address:</p>
+            <input type="text" id="email" name="email">
+
+            <p>Name:</p>
+            <input type="text" id="name" name="name">
+
+            <p>Goal:</p>
+            <textarea type="text" id="goal" name="goal"></textarea>
+        </div>
+
+        <div id="submitDiv">
+            <button type="submit" id="submitButton">Submit</button>
+            <button type="reset" id="clearButton">Clear</button>
+        </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+h1,p {
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    border: 2px solid;
+    padding: 5px 5px 5px 5px;
+    width: auto;
+}
+th {
+    background-color: #aeaeae;
+}
+#tableCorner, td {
+    background-color: #ffffff;
+}
+#tableCorner {
+    border: none;
+}
+#contact {
+    font-size: .75em;
+}
+#printButton {
+    display: block;
+    width: auto;
+    margin: auto;
+}
+@media print {
+    #printButton {
+        visibility: hidden;
+    }
+}
